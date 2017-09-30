@@ -4,11 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Vue JS Example</title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="container">
-    
+
+  <div class="container" id="app">
+
+    <h2>Vue JS Practise</h2>
+
+    <p>Name: {{ name }}</p>
+    <p>Age : {{ age }}</p>
+
+    <button v-on:click="add">Add</button>
+    <button v-on:click="sub">Sub</button>
+
   </div>
+
+  <!-- Scripts -->
+  <script src="js/vue.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
+
 </body>
 </html>
